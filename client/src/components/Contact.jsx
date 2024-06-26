@@ -14,7 +14,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/contact', data)
+            const res = await axios.post('https://comcare.onrender.com/api/contact', data)
             setMsg(res.data.message)
             console.log(res.data.details)
         } catch (error) {
